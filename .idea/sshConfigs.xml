@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="nights.not-null.co.uk" id="b0f96abe-9d3e-4062-ac87-f9fc3e59bfc0" keyPath="C:\Users\Jim\OneDrive\Documents\id_rsa" port="22" customName="Live" nameFormat="CUSTOM" useOpenSSHConfig="true">
+        <option name="customName" value="Live" />
+      </sshConfig>
+      <sshConfig host="nights.not-null.co.uk" id="d2ed1645-7321-4ac7-b907-02ce3b7ee4ac" keyPath="C:\Users\Jim\OneDrive\Documents\id_rsa" port="22" nameFormat="DESCRIPTIVE" username="james" useOpenSSHConfig="true" />
+      <sshConfig authType="PASSWORD" host="127.0.0.1" id="c80f7f91-3c29-4165-a99c-d706fd7246fd" port="2022" nameFormat="DESCRIPTIVE" username="nights" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

@@ -1,0 +1,1 @@
+<p>Having trouble? Feel free to ask a <span class="role">@Minecraft Server Mod</span> or someone in <a class="channel" href="https://discord.com/channels/176364445797318656/927973433059459082" target="_blank">#hub_design_competition</a> for help.</p>

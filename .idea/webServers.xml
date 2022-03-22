@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f8d209b9-e99f-4439-a6b8-3584d91a9242" name="Live" url="http://nights.not-null.co.uk">
+        <fileTransfer rootFolder="/var/www/rtgame/detailing" accessType="SFTP" host="nights.not-null.co.uk" port="22" sshConfigId="b0f96abe-9d3e-4062-ac87-f9fc3e59bfc0" sshConfig="Live" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="9e1a56fb-84e1-400c-a8e6-bcf968364f12" name="WSL">
+        <fileTransfer rootFolder="/docker/voting/" accessType="SFTP" host="127.0.0.1" port="2022" sshConfigId="c80f7f91-3c29-4165-a99c-d706fd7246fd" sshConfig="nights@127.0.0.1:2022 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
