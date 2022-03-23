@@ -56,8 +56,6 @@ return [
     */
     'commands' => [
         'artisan' => [
-            'vite:tsconfig',
-            // 'typescript:generate'
         ],
         'shell' => [
             //
