@@ -23,7 +23,7 @@
         <li>
             <h2>Click the <code>[Cast your Votes]</code> button</h2>
             <p>You'll find it in the chat, shown below</p>
-            <img src="{{ url('images/voting-step-3.png') }}" alt="" />
+            <img src="images/voting-step-3.png" alt="" />
         </li>
         <li>
             <h2>Cast your votes!</h2>
