@@ -3,6 +3,7 @@
     namespace App\Http\Requests;
 
     use Illuminate\Foundation\Http\FormRequest;
+    use Illuminate\Validation\Rule;
 
     class VoteStore extends FormRequest {
         /**
@@ -24,11 +25,18 @@
                 'token' => 'required',
                 'uuid' => 'required',
                 'votes' => 'array',
-                'votes.*' => 'numeric|exists:entries,id|distinct',
+                'votes.*' => 'numeric|distinct',
             ];
 
             for($i = 1; $i <= env('VOTE_COUNT', 5); $i++) {
-                $rules['votes.' . $i] = 'required|distinct';
+                $rules['votes.' . $i] = [
+                    'required',
+                    'numeric',
+                    'distinct',
+                    Rule::exists('entries', 'id')->where(function ($query) {
+                        return $query->where('group_id', $this->route('group')->id);
+                    })
+                ];
             }
 
             return $rules;
