@@ -30,7 +30,7 @@ class VoteController extends Controller {
             $vote->entries()->attach(Entry::find($entry), ['rank' => (env('VOTE_COUNT', 5) + 1) - $rank]);
         }
 
-        return redirect(route('complete'));
+        return redirect(config('app.url') . 'complete');
     }
 
     public function complete() {

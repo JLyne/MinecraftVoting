@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/complete', 'VoteController@complete')->name('complete');
+Route::get('complete', 'VoteController@complete')->name('complete');
 
 Route::middleware(['web', 'votetoken'])->group(function () {
-    Route::post('/{group:slug}', 'VoteController@submit')->name('submit');
-    Route::get('/{group:slug}', 'VoteController@form')->name('submit');
+    Route::post('{group:slug}', 'VoteController@submit')->name('submit');
+    Route::get('{group:slug}', 'VoteController@form')->name('submit');
 });
 

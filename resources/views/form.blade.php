@@ -14,7 +14,7 @@
     </div>
 
     {{ Form::open([
-        'url' => route('submit', [$group->slug]),
+        'url' => config('app.url') . $group->slug,
         'method' => 'POST',
     ]) }}
         {{ Form::hidden('token', $token) }}
