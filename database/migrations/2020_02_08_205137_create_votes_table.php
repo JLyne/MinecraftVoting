@@ -15,7 +15,7 @@
                 $table->bigIncrements('id');
                 $table->unsignedBigInteger('group_id');
                 $table->foreign('group_id')->references('id')->on('groups')->onDelete('cascade');
-                $table->char('uuid', 36)->unique();
+                $table->char('uuid', 36)->index();
                 $table->timestamps();
             });
         }
