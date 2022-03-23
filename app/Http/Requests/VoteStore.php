@@ -38,7 +38,7 @@
             return [
                 'uuid.*' => 'Token missing or invalid',
                 'token.*' => 'Token missing or invalid',
-                'votes.*.required' => 'Please select ' . env('VOTE_COUNT', 5) . 'entries to vote for',
+                'votes.*.required' => 'Please select ' . env('VOTE_COUNT', 5) . ' entries to vote for',
                 'votes.*.distinct' => 'You cannot vote for the same entry more than once',
                 'votes.*.exists' => 'One or more of your votes were invalid',
                 'votes.*.numeric' => 'One or more of your votes were invalid',
